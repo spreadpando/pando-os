@@ -1,0 +1,37 @@
+# core system — everything else assumes these
+base
+base-devel
+linux
+linux-headers
+linux-firmware
+sudo
+git
+stow
+openssh
+man-db
+pacman-contrib
+reflector
+
+# network / bluetooth
+networkmanager
+bluez
+bluez-utils
+
+# audio
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+alsa-utils
+
+# fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-hack-nerd
+woff2-font-awesome
+
+# misc
+xdg-user-dirs
+xdg-utils

@@ -1,0 +1,10 @@
+# installed only when lspci finds an NVIDIA GPU
+# 50-series (Blackwell) requires the open kernel modules
+nvidia-open-dkms
+nvidia-utils
+lib32-nvidia-utils
+nvidia-settings
+opencl-nvidia
+egl-wayland
+# backs LIBVA_DRIVER_NAME=nvidia in hyprland.lua
+libva-nvidia-driver

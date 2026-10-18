@@ -1,0 +1,50 @@
+# personal apps — skipped with --minimal
+
+# browsers / comms
+firefox
+chromium
+discord
+signal-desktop
+thunderbird
+
+# media / creative
+vlc
+obs-studio
+gimp
+inkscape
+blender
+flameshot
+libreoffice-fresh
+evince
+eog
+gnome-calculator
+mission-center
+
+# audio production
+reaper
+qpwgraph
+qjackctl
+yabridge
+yabridgectl
+
+# gaming
+steam
+lutris
+wine-staging
+winetricks
+
+# dev
+nodejs
+typescript
+go
+jdk-openjdk
+docker
+docker-buildx
+docker-compose
+android-tools
+scrcpy
+ollama
+
+# hardware
+openrgb
+liquidctl

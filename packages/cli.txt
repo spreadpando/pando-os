@@ -1,0 +1,21 @@
+# matches the `cli` stow package (fish, starship, kitty, alacritty, tmux, fastfetch)
+fish
+fisher
+starship
+kitty
+alacritty
+tmux
+fastfetch
+chafa
+zoxide
+neovim
+vim
+bat
+fd
+ripgrep
+jq
+htop
+uv
+rustup
+wget
+rsync

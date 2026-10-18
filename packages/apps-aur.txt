@@ -1,0 +1,6 @@
+# personal AUR apps — skipped with --minimal
+zen-browser-bin
+spotify
+visual-studio-code-bin
+cursor-bin
+opencode-bin

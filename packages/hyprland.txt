@@ -1,0 +1,42 @@
+# compositor + session
+hyprland
+hyprpaper
+hyprshutdown
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+xorg-xwayland
+qt5-wayland
+qt6-wayland
+sddm
+
+# bar, notifications, launcher (autostarted / bound in hyprland.lua)
+waybar
+dunst
+rofi
+polkit-gnome
+network-manager-applet
+blueman
+
+# audio controls (keybinds + waybar)
+libpulse
+pamixer
+pavucontrol
+playerctl
+
+# wallpaper pipeline in hyprland.lua (magick crop, ffmpeg + mpvpaper for video)
+imagemagick
+ffmpeg
+mpv
+
+# files / keyring
+nemo
+nemo-fileroller
+file-roller
+gvfs
+gnome-keyring
+seahorse
+
+# theming (theme-apply writes qt6ct + gtk settings)
+qt5ct
+qt6ct
+breeze-icons

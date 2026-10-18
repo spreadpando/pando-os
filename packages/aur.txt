@@ -1,0 +1,5 @@
+# AUR packages the desktop itself depends on
+mpvpaper
+sddm-silent-theme
+graphite-gtk-theme
+catppuccin-cursors-latte
