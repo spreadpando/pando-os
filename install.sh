@@ -159,6 +159,20 @@ for name in "${STOW_ORDER[@]}"; do
   fi
 done
 
+# ── assets ───────────────────────────────────────────────────────────
+# assets/ mirrors $HOME (wallpapers, rofi images). Copied file by file, never
+# overwriting, so it also works through stow-folded dirs like ~/.config/rofi.
+step "assets → \$HOME"
+copied=0
+while IFS= read -r -d '' src; do
+  dest="$HOME/${src#"$ROOT/assets/"}"
+  [[ -e $dest ]] && continue
+  run mkdir -p "${dest%/*}"
+  run cp -p "$src" "$dest"
+  copied=$((copied + 1))
+done < <(find "$ROOT/assets" -type f -print0)
+echo "  $copied file(s) copied"
+
 # fonts shipped inside the dotfiles (feather, Iosevka/JetBrains Nerd) land in ~/.local/share/fonts
 run fc-cache -f
 

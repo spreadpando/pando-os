@@ -27,6 +27,7 @@ cd ~/Projects/pando-os
 | `packages/nvidia.txt` | installed only when an NVIDIA GPU is detected |
 | `packages/aur.txt` | AUR packages the desktop needs (mpvpaper, sddm theme, GTK theme, cursors) |
 | `packages/apps.txt`, `apps-aur.txt` | personal apps, skipped with `--minimal` |
+| `assets/` | wallpapers and rofi images, laid out like `$HOME`; copied in without overwriting anything |
 | `etc/` | reflector config, SDDM theme config, fallback mirrorlist |
 | `install.sh` | the bootstrap (idempotent, safe to re-run) |
 | `drift.sh` | shows packages installed here but missing from every list, and the reverse |
@@ -36,7 +37,9 @@ The CPU microcode package (`amd-ucode` / `intel-ucode`) is chosen automatically.
 ## Dotfiles
 
 These are stowed from `~/.dotfiles`, and any that are missing get cloned from GitHub:
-`cli`, `theme`, `rofi`, `hyprland`. The URLs are at the top of `install.sh`.
+`cli`, `theme` (arch-theme), `rofi`, `hyprland` (hyperland). The URLs are at the top of `install.sh`.
+Fonts that waybar and rofi need (feather, Iosevka/JetBrains Nerd) ship inside those repos; image assets live here in `assets/`.
+Per-machine Hyprland settings go in `~/.config/hypr/local.lua`, which the installer seeds.
 
 ## Keeping it current
 

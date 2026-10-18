@@ -2,6 +2,7 @@
 hyprland
 hyprpaper
 hyprshutdown
+hyprlock
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 xorg-xwayland
