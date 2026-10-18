@@ -159,6 +159,9 @@ for name in "${STOW_ORDER[@]}"; do
   fi
 done
 
+# fonts shipped inside the dotfiles (feather, Iosevka/JetBrains Nerd) land in ~/.local/share/fonts
+run fc-cache -f
+
 # per-machine Hyprland settings (never in git); monitors get filled in by hand later
 HYPR_LOCAL="$HOME/.config/hypr/local.lua"
 if [[ ! -e $HYPR_LOCAL ]]; then
