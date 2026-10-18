@@ -16,8 +16,8 @@ DOTFILES_DIR="${DOTFILES_DIR:-$HOME/.dotfiles}"
 # stow package -> repo to clone when it isn't already in $DOTFILES_DIR
 declare -A DOTFILES=(
   [cli]=https://github.com/spreadpando/cli.git
-  [hyprland]=https://github.com/spreadpando/hyprland.git
-  [theme]=https://github.com/spreadpando/theme.git
+  [hyprland]=https://github.com/spreadpando/hyperland.git
+  [theme]=https://github.com/spreadpando/arch-theme.git
   [rofi]=https://github.com/spreadpando/rofi.git
 )
 STOW_ORDER=(cli theme rofi hyprland)
