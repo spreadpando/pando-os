@@ -173,7 +173,7 @@ while IFS= read -r -d '' src; do
 done < <(find "$ROOT/assets" -type f -print0)
 echo "  $copied file(s) copied"
 
-# fonts shipped inside the dotfiles (feather, Iosevka/JetBrains Nerd) land in ~/.local/share/fonts
+# fonts shipped inside the dotfiles (JetBrains Mono Nerd, for rofi) land in ~/.local/share/fonts
 run fc-cache -f
 
 # ── shell ────────────────────────────────────────────────────────────
