@@ -176,27 +176,6 @@ echo "  $copied file(s) copied"
 # fonts shipped inside the dotfiles (feather, Iosevka/JetBrains Nerd) land in ~/.local/share/fonts
 run fc-cache -f
 
-# per-machine Hyprland settings (never in git); monitors get filled in by hand later
-HYPR_LOCAL="$HOME/.config/hypr/local.lua"
-if [[ ! -e $HYPR_LOCAL ]]; then
-  has_nvidia && nv=true || nv=false
-  if ((DRY)); then
-    echo "  + write $HYPR_LOCAL (nvidia = $nv, no monitors)"
-  else
-    mkdir -p "${HYPR_LOCAL%/*}"
-    cat >"$HYPR_LOCAL" <<EOF
--- Per-machine Hyprland settings; see local.example.lua next to this file.
--- Fill in monitors (\`hyprctl monitors\`) to get the spanned wallpaper.
-return {
-    monitors   = {},
-    workspaces = {},
-    nvidia     = $nv,
-    env        = {},
-}
-EOF
-  fi
-fi
-
 # ── shell ────────────────────────────────────────────────────────────
 step "shell: fish + plugins + nvm"
 [[ -d "$HOME/.nvm" ]] || run git clone --depth 1 https://github.com/nvm-sh/nvm.git "$HOME/.nvm"

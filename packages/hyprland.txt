@@ -3,6 +3,7 @@ hyprland
 hyprpaper
 hyprshutdown
 hyprlock
+nwg-displays
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 xorg-xwayland

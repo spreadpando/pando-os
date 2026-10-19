@@ -39,7 +39,7 @@ The CPU microcode package (`amd-ucode` / `intel-ucode`) is chosen automatically.
 These are stowed from `~/.dotfiles`, and any that are missing get cloned from GitHub:
 `cli`, `theme` (arch-theme), `rofi`, `hyprland` (hyperland). The URLs are at the top of `install.sh`.
 Fonts that waybar and rofi need (feather, Iosevka/JetBrains Nerd) ship inside those repos; image assets live here in `assets/`.
-Per-machine Hyprland settings go in `~/.config/hypr/local.lua`, which the installer seeds.
+Monitor layout and workspace pinning are per-machine: arrange them with `nwg-displays`, which writes `~/.config/hypr/monitors.lua` and `workspaces.lua` (the spanned wallpaper follows the layout). NVIDIA env is switched on automatically when the driver is loaded.
 
 ## Keeping it current
 
